@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HopeNest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h2>HopeNest</h2>
+    <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    <nav id="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#volunteer">Volunteer</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-overlay">
+      <div class="hero-text">
+        <h1>HopeNest: A Shelter for Dreams.</h1>
+        <p>Join hands to build a brighter future for every child.</p>
+        <a href="#volunteer"><button>Become a Volunteer</button></a>
+      </div>
+    </div>
+  </section>
+
+  </section>
+
+ <section id="about" style="background-color: #fffaf4;">
+  <div class="text" style="max-width: 900px; margin: auto; padding: 40px 20px;">
+    <h2 style="text-align: center; color: #f76b1c; margin-bottom: 20px;">About Us</h2>
+    
+    <p style="font-size: 1.1rem; margin-bottom: 20px;">
+      <strong>HopeNest</strong> is a grassroot initiative focused on educating children from underserved communities. With the belief that education is a right, not a privilege, we aim to bring structured learning directly to slum areas where formal schooling is often out of reach.
+    </p>
+
+    <p style="font-size: 1.1rem; margin-bottom: 20px;">
+      We conduct open-air classes, provide learning kits, and empower children with values and confidence. With help from volunteers and well-wishers, we strive to give every child a reason to dream, learn, and grow beyond their limitations.
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 30px;">
+      <div style="flex: 1; min-width: 250px; margin: 10px;">
+        <h4 style="color: #f76b1c;">Our Mission</h4>
+        <p>To create accessible, inclusive, and joyful learning spaces for every child, regardless of background or income.</p>
+      </div>
+      <div style="flex: 1; min-width: 250px; margin: 10px;">
+        <h4 style="color: #f76b1c;">Our Vision</h4>
+        <p>To build a society where no child is deprived of knowledge, confidence, and the opportunity to thrive.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="volunteer">
+    <h2 class="center-heading">Become a Volunteer</h2>
+    <div class="form-container">
+      <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Full Name" required />
+        <input type="email" placeholder="Email ID" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <textarea rows="4" placeholder="Why do you want to volunteer?" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <div class="text">
+        <h2>Contact Us</h2>
+        <p>Email: hopenestfoundation@gmail.com</p>
+        <p>Phone: +91-1234567890</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Basti Ki Pathshala | All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

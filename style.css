@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #fffaf4;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: #f76b1c;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url('hero.avif');
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  z-index: 2;
+  text-align: center;
+  padding: 0 20px;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  background-color: #f76b1c;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #f76b1c;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about, .contact {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about img, .contact img {
+  flex: 1;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  max-height: 200px;
+}
+
+.about .text, .contact .text {
+  flex: 1;
+}
+
+.about-section {
+  background-color: #fffaf4;
+}
+
+.about-section h2 {
+  text-align: center;
+  color: #f76b1c;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.mission-vision div {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.mission-vision h4 {
+  color: #f76b1c;
+}
+
+.form-container {
+  background-color: #fef4e9;
+  padding: 40px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.form-container button {
+  background-color: #f76b1c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #e85c0f;
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.center-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .about, .contact {
+    flex-direction: column;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #f76b1c;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    display: none;
+  }
+
+  nav a {
+    padding: 10px 0;
+    color: white;
+  }
+
+  nav.active {
+    display: flex;
+  }
+}
